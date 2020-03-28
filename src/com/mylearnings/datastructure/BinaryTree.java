@@ -27,6 +27,7 @@ public class BinaryTree<T extends Comparable<T>> {
             else
                 add(cursor.left,value);
         }else{
+            
             if(cursor.right==null)
                 cursor.right=new Node<>(value);
             else
