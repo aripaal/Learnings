@@ -1,11 +1,9 @@
 package com.mylearnings.datastructure;
 
-import org.omg.CORBA.MARSHAL;
-
 import java.util.*;
 import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Map;
+import java.util.Queue;
 import java.util.Stack;
 /**
  * Created by ronnie on 3/29/17.
@@ -21,13 +19,13 @@ public class BinaryTree<T extends Comparable<T>> {
         add(root,value);
     }
     private void add(Node<T> cursor, T value){
-        if(value.compareTo(cursor.value)<0){
+        if(value.compareTo(cursor.value)<0){\
             if(cursor.left==null)
                 cursor.left=new Node<>(value);
             else
                 add(cursor.left,value);
         }else{
-            
+
             if(cursor.right==null)
                 cursor.right=new Node<>(value);
             else
